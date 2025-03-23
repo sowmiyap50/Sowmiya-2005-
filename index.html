@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sivachandran S - Portfolio</title>
+    <title>Sowmiya P - Portfolio</title>
     <style>
         /* General Styles */
         * {
@@ -14,11 +14,10 @@
         }
 
         body {
-            background-color: #2c3e50; /* Dark background color */
-            color: #ecf0f1; /* Light text color */
+            background-color: #2c3e50; /* Dark background */
+            color: #ecf0f1; /* Light text */
             line-height: 1.6;
             font-size: 16px;
-            padding: 0;
         }
 
         .container {
@@ -37,21 +36,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 20px;
         }
 
         header h1 {
             font-size: 36px;
             color: #ecf0f1;
-            margin-left: 20px;
         }
 
-        header p {
-            font-size: 20px;
-            color: #bdc3c7;
-            margin-top: 10px;
-        }
-
-        /* Header Image */
         .profile-img {
             width: 100px;
             height: 100px;
@@ -70,16 +62,11 @@
             margin-bottom: 15px;
         }
 
-        section p, section ul {
-            font-size: 16px;
-            color: #ecf0f1;
-        }
-
         /* Contact Info */
         .contact-info {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
+            flex-direction: column;
+            gap: 10px;
         }
 
         .contact-info div {
@@ -87,59 +74,36 @@
             color: #bdc3c7;
         }
 
-        .contact-info div a {
+        .contact-info a {
             text-decoration: none;
             color: #16a085;
         }
 
-        /* Feedback Form */
-        .feedback-form input,
-        .feedback-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
-
-        .feedback-form button {
-            background-color: #16a085;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .feedback-form button:hover {
-            background-color: #1abc9c; /* Lighter shade on hover */
+        .contact-info a:hover {
+            text-decoration: underline;
         }
 
         /* Skills Section */
         .skills ul {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid layout */
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
             gap: 15px;
-            padding: 0;
             list-style-type: none;
         }
 
         .skills li {
-            background-color: #16a085; /* Teal background for skill tags */
+            background-color: #16a085;
             color: white;
             padding: 15px 20px;
             border-radius: 10px;
-            font-size: 16px;
             text-align: center;
             font-weight: bold;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            transition: 0.3s;
         }
 
         .skills li:hover {
-            background-color: #1abc9c; /* Lighter teal on hover */
-            transform: scale(1.1); /* Slightly increase the size on hover */
+            background-color: #1abc9c;
+            transform: scale(1.1);
         }
 
         /* Footer */
@@ -156,7 +120,6 @@
         footer a:hover {
             text-decoration: underline;
         }
-
     </style>
 </head>
 <body>
@@ -164,28 +127,26 @@
     <div class="container">
         <!-- Header -->
         <header>
-            <img src="IMG-20250323-WA0019.jpg" alt="KISHORE A" class="profile-img">
-            <h1>SOWMIYA P</h1>
+            <img src="IMG-20250323-WA0019.jpg" alt="Sowmiya P" class="profile-img">
+            <h1>Sowmiya P</h1>
         </header>
 
-        <!-- About Me Section -->
+        <!-- About Me -->
         <section>
             <h2>About Me</h2>
-            <p>Hello, I'm SOWMIYA P, a Full-Stack Developer with a passion for technology and problem-solving. I enjoy working on both front-end and back-end development and continuously strive to learn and improve my skills. Currently, I am pursuing my BSc in Information Technology and gaining experience through internships and personal projects.</p>
+            <p>Hello, I'm Sowmiya P, a Full-Stack Developer with a passion for technology and problem-solving. I enjoy working on both front-end and back-end development, continuously striving to learn and improve my skills. Currently, I am pursuing a BSc in Information Technology, gaining experience through internships and personal projects.</p>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Skills -->
         <section class="skills">
             <h2>Skills</h2>
             <ul>
-                <li>Programming Languages: C, C++, Java</li>
-                <li>Web Technologies: HTML, CSS, JavaScript</li>
-                <li>Frontend Frameworks: React, Vue.js</li>
-                <li>Backend Technologies: Node.js, Express</li>
-                
+                <li>C, C++, Java</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Vue.js</li>
+                <li>Node.js, Express</li>
             </ul>
         </section>
-
 
         <!-- Education -->
         <section class="education">
@@ -194,11 +155,11 @@
                 <li>
                     <h3>BSc in Information Technology</h3>
                     <p>University of Sri Vasavi College | 2023 - Present</p>
-                    <p>Currently pursuing a degree in Information Technology with a focus on full-stack development and software engineering.</p>
+                    <p>Focusing on full-stack development and software engineering.</p>
                 </li>
                 <li>
-                    <h3> (10th & 12th Grade)</h3>
-                    <p>goverment girls higher secondary school | 2021 - 2023</p>
+                    <h3>10th & 12th Grade</h3>
+                    <p>Government Girls Higher Secondary School | 2021 - 2023</p>
                 </li>
             </ul>
         </section>
@@ -207,14 +168,14 @@
         <section>
             <h2>Contact Information</h2>
             <div class="contact-info">
-                <div>Email: <a>sowmiyap50@gmail.com</a></div>
-                <div>Phone: +91 9843861579</div>
-            
+                <div>Email: <a href="mailto:sowmiyap50@gmail.com">sowmiyap50@gmail.com</a></div>
+                <div>Phone: <a href="tel:+919843861579">+91 98438 61579</a></div>
             </div>
-        
+        </section>
+
         <!-- Footer -->
         <footer>
-            <b>Check out my <a href="resume.pdf 2.pdf" target="_blank">Resume</a></b>
+            <b>Check out my <a href="resume.pdf" target="_blank">Resume</a></b>
         </footer>
     </div>
 
