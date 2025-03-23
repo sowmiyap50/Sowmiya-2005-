@@ -27,25 +27,16 @@
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: center; /* Centers all direct child elements */
-        }
-
-        /* Centered Resume Title */
-        .resume-title {
-            font-size: 40px;
-            font-weight: bold;
-            color: #16a085;
-            margin-bottom: 20px;
-            text-transform: uppercase;
         }
 
         /* Header */
         header {
+            text-align: center;
+            margin-bottom: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 20px;
-            margin-bottom: 30px;
         }
 
         header h1 {
@@ -67,12 +58,57 @@
 
         section h2 {
             font-size: 28px;
-            color: #16a085;
+            color: #16a085; /* Teal section header */
             margin-bottom: 15px;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-info div {
+            font-size: 16px;
+            color: #bdc3c7;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #16a085;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Skills Section */
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+            gap: 15px;
+            list-style-type: none;
+        }
+
+        .skills li {
+            background-color: #16a085;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .skills li:hover {
+            background-color: #1abc9c;
+            transform: scale(1.1);
         }
 
         /* Footer */
         footer {
+            text-align: center;
             margin-top: 30px;
         }
 
@@ -89,9 +125,6 @@
 <body>
 
     <div class="container">
-        <!-- Resume Title -->
-        <h1 class="resume-title">Resume</h1>
-
         <!-- Header -->
         <header>
             <img src="IMG-20250323-WA0019.jpg" alt="Sowmiya P" class="profile-img">
@@ -101,7 +134,7 @@
         <!-- About Me -->
         <section>
             <h2>About Me</h2>
-            <p>Hello, I'm Sowmiya P, a Full-Stack Developer with a passion for technology and problem-solving...</p>
+            <p>Hello, I'm Sowmiya P, a Full-Stack Developer with a passion for technology and problem-solving. I enjoy working on both front-end and back-end development, continuously striving to learn and improve my skills. Currently, I am pursuing a BSc in Information Technology, gaining experience through internships and personal projects.</p>
         </section>
 
         <!-- Skills -->
@@ -112,6 +145,22 @@
                 <li>HTML, CSS, JavaScript</li>
                 <li>React, Vue.js</li>
                 <li>Node.js, Express</li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>BSc in Information Technology</h3>
+                    <p>University of Sri Vasavi College | 2023 - Present</p>
+                    <p>Focusing on full-stack development and software engineering.</p>
+                </li>
+                <li>
+                    <h3>10th & 12th Grade</h3>
+                    <p>Government Girls Higher Secondary School | 2021 - 2023</p>
+                </li>
             </ul>
         </section>
 
